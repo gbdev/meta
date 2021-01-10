@@ -1,29 +1,38 @@
+# Matterbridge configuration for the gb and gbadev communities
+# bridges Discord channels to IRC
+# https://gbdev.io
+
+# Discord servers
 [discord]
-    [discord.mydiscord]
-    Token="NzI3MjY4OTc2MzAzOTMxNTQ0.XvpYAw.uNNOQCEg0Hj5uk54WoGoAqfbiiw"
+    [discord.gbdev]
+    Token="<DISCORD_BOT_TOKEN>"
     Server="gbdev"
     RemoteNickFormat="{NICK}: "
 
-    [discord.gbadiscord]
-    Token="NzI3MjY4OTc2MzAzOTMxNTQ0.XvpYAw.uNNOQCEg0Hj5uk54WoGoAqfbiiw"
+    [discord.gbadev]
+    Token="<DISCORD_BOT_TOKEN>"
     Server="gbadev"
     RemoteNickFormat="{NICK}: "
 
-[irc.myirc]
+# IRC (EFNet)
+[irc.efnet]
 Server="irc.efnet.org:6667"
 Nick="gb-bridge"
 RemoteNickFormat="<{NICK}> "
+
+
+# Bridge gateways
 
 [[gateway]]
 name="gateway1"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="general"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2"
 
 [[gateway]]
@@ -31,11 +40,11 @@ name="gbagateway"
 enable=true
 
 [[gateway.inout]]
-account="discord.gbadiscord"
+account="discord.gbadev"
 channel="general"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbadev"
 
 [[gateway]]
@@ -43,11 +52,11 @@ name="gateway2"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="off-topic"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-off-topic"
 
 [[gateway]]
@@ -55,11 +64,11 @@ name="gateway3"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="emudev"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-emudev"
 
 [[gateway]]
@@ -67,11 +76,11 @@ name="gateway4"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="gbdk"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-gbdk"
 
 [[gateway]]
@@ -79,11 +88,11 @@ name="gateway5"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="research"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-research"
 
 [[gateway]]
@@ -91,11 +100,11 @@ name="gateway6"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="hardware"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-hardware"
 
 [[gateway]]
@@ -103,11 +112,11 @@ name="gateway7"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="tools"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-tools"
 
 [[gateway]]
@@ -115,11 +124,11 @@ name="gateway8"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="showcase"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-showcase"
 
 [[gateway]]
@@ -127,11 +136,11 @@ name="gateway9"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="music"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-music"
 
 [[gateway]]
@@ -139,9 +148,9 @@ name="gateway11"
 enable=true
 
 [[gateway.inout]]
-account="discord.mydiscord"
+account="discord.gbdev"
 channel="meta"
 
 [[gateway.inout]]
-account="irc.myirc"
+account="irc.efnet"
 channel="#gbdev2-meta"
