@@ -1,8 +1,7 @@
 # meta
 
-This repository keeps track of community wide configurations
-of our infrastructure
-that generally don't fit the other repositories.
+This repository contains community wide documentation and configuration files 
+of our infrastructure that generally don't fit the other repositories.
 
 Documented:
 
