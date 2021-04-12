@@ -16,7 +16,7 @@
 
 # IRC (EFNet)
 [irc.efnet]
-Server="irc.efnet.org:6667"
+Server="irc.efnet.fr:6667"
 Nick="gb-bridge"
 RemoteNickFormat="<{NICK}> "
 
