@@ -1,0 +1,14 @@
+[Unit]
+Description=Discord IRC bridge
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/avivace/matterbridge/matterbridge
+Restart=always
+RestartSec=30
+WorkingDirectory=/home/avivace/matterbridge
+User=avivace
+
+[Install]
+WantedBy=multi-user.target
