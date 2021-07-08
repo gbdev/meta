@@ -21,9 +21,12 @@ These base guidelines (if not specified otherwise) apply to every repository und
 
 ## Maintainers workflow
 
+- Tests and pipelines must pass. If they failed because of something unrelated to the PR (e.g. a link died in the meantime), mention it in the PR thread.
+- If the solution is "sub-optimal" (but still better than the actual implementation) and there are clear possible improvements, mention them and try to collaborate with the contributor, but ultimately prefer merging something sub-optimal than keeping the content stale/inactive. An issue can be opened (or kept opened) to report this situation.
+
 For disruptive PRs:
 
-- Wait for 2 maintainers approval
+- Wait for 2* maintainers approval
 - Every week of inactivity/staleness, ping maintainers
 - After **5** weeks from last activity, PR is merge-able with only 1 maintainer approval
 
@@ -32,6 +35,7 @@ For non-disruptive PRs:
 - Wait for 1 maintainer approval and merge it after 5 days
 - If a maintainer wants to put a veto and to make the PR wait for his/her input after the mentioned period, the "veto" label can be used
 
+*if there are at least 2 active maintainers, otherwise 1.
 
 ## References
 
