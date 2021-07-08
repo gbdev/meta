@@ -19,6 +19,19 @@ These base guidelines (if not specified otherwise) apply to every repository und
 - If the PR is not self-explanatory, add brief description of what has been done and implementation choices (if any).
 - Keep the work in the branch focused and directed at accomplishing *only* what you are describing in the PR. Ideally a PR should address a single issue (or a set of assimilable ones).
 
+## Maintainers workflow
+
+For disruptive PRs:
+
+- Wait for 2 maintainers approval
+- Every week of inactivity/staleness, ping maintainers
+- After **5** weeks from last activity, PR is merge-able with only 1 maintainer approval
+
+For non-disruptive PRs:
+
+- Wait for 1 maintainer approval and merge it after 5 days
+- If a maintainer wants to put a veto and to make the PR wait for his/her input after the mentioned period, the "veto" label can be used
+
 
 ## References
 
