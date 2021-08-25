@@ -1,0 +1,89 @@
+[irc]
+server = "efnet.port80.se"
+#server = "efnet.portlane.se"
+
+port = 6667
+nickname = "gbaBridge"
+
+# NickServ password, "" for no password
+password = ""
+
+# List of IRC usernames of admins who'll be able to ban people in Discord
+# (or possibly for some other admin-only commands)
+adminList = []
+
+[discord]
+# Discord bot token
+token = ""
+# Discord guild ID (ID of the server)
+guild = "768759024270704641"
+
+# Array of mappings between IRC and Discord channels
+# irc is a name of the IRC channel
+# discord is the ID of the channel (can get from the link)
+# webhook is a webhook URL for that channel
+
+[[mapping]]
+irc = "#gbadev"
+discord = "768759024760913922"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-meta"
+discord = "771400987927511040"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-help"
+discord = "829850171151876127"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-emudev"
+discord = "771045950709694474"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-asm"
+discord = "833314924766953482"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-showcase"
+discord = "813090772324712528"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-offtopic"
+discord = "771026875446198306"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-music"
+discord = "777683711453298698"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-docs"
+discord = "829440691754237952"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-tools"
+discord = "771847424477495346"
+webhook = ""
+
+[[mapping]]
+irc = "#gba-toolchain"
+discord = "864182798109769758"
+webhook = ""
+
+[[mapping]]
+irc = "#butano"
+discord = "831589248239009832"
+webhook = ""
+
+[[mapping]]
+irc = "#natu"
+discord = "831589368191778816"
+webhook = ""
