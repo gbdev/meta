@@ -1,156 +1,120 @@
-# Matterbridge configuration for the gb and gbadev communities
-# bridges Discord channels to IRC
-# https://gbdev.io
-
-# Discord servers
 [discord]
-    [discord.gbdev]
-    Token="<DISCORD_BOT_TOKEN>"
-    Server="gbdev"
-    RemoteNickFormat="{NICK}: "
+[discord.mydiscord]
 
-    [discord.gbadev]
-    Token="<DISCORD_BOT_TOKEN>"
-    Server="gbadev"
-    RemoteNickFormat="{NICK}: "
+# You can get your token by following the instructions on
+# https://github.com/42wim/matterbridge/wiki/Discord-bot-setup
+# in particular that the "Members Intent" checkbox is important.
+# If you want roles/groups mentions to be shown with names instead of ID, 
+# you'll need to give your bot the "Manage Roles" permission.
+Token="<DISCORD_TOKEN>"
+Server="303217943234215948" # if you want to bridge https://discord.com/channels/8888888888888/7777777777777777, then this should be 8888888888888
+AutoWebhooks=true
+RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
+# Map threads from other bridges on discord replies
+PreserveThreading=false
 
-# IRC (EFNet)
-[irc.efnet]
-Server="irc.efnet.fr:6667"
-Nick="gb-bridge"
-RemoteNickFormat="<{NICK}> "
-
-
-# Bridge gateways
+[irc.myirc]
+Nick="gb-bridge" # <== change this
+NickServNick="gb-bridge" # <== change this if necessary (your nick registered with nickserv)
+NickServPassword="<PASSOWRD>" # <== change this (your pass with nickserv)
+Server="irc.libera.chat:6697"
+UseTLS=true
+UseSASL=true
+SkipTLSVerify=false
+RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
 
 [[gateway]]
-name="gateway1"
+name="general-bridge"
 enable=true
 
 [[gateway.inout]]
-account="discord.gbdev"
+account="irc.myirc"
+channel="#gbdev"
+
+[[gateway.inout]]
+account="discord.mydiscord"
 channel="general"
 
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2"
-
 [[gateway]]
-name="gbagateway"
+name="meta-bridge"
 enable=true
 
 [[gateway.inout]]
-account="discord.gbadev"
-channel="general"
+account="irc.myirc"
+channel="#gbdev-meta"
 
 [[gateway.inout]]
-account="irc.efnet"
-channel="#gbadev"
-
-[[gateway]]
-name="gateway2"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="off-topic"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-off-topic"
-
-[[gateway]]
-name="gateway3"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="emudev"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-emudev"
-
-[[gateway]]
-name="gateway4"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="gbdk"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-gbdk"
-
-[[gateway]]
-name="gateway5"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="research"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-research"
-
-[[gateway]]
-name="gateway6"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="hardware"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-hardware"
-
-[[gateway]]
-name="gateway7"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="tools"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-tools"
-
-[[gateway]]
-name="gateway8"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="showcase"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-showcase"
-
-[[gateway]]
-name="gateway9"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
-channel="music"
-
-[[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-music"
-
-[[gateway]]
-name="gateway11"
-enable=true
-
-[[gateway.inout]]
-account="discord.gbdev"
+account="discord.mydiscord"
 channel="meta"
 
+[[gateway]]
+name="ot-bridge"
+enable=true
+
 [[gateway.inout]]
-account="irc.efnet"
-channel="#gbdev2-meta"
+account="irc.myirc"
+channel="#gbdev-ot"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="off-topic"
+
+[[gateway]]
+name="asm-bridge"
+enable=true
+
+[[gateway.inout]]
+account="irc.myirc"
+channel="#gbdev-asm"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="asm-rgbds"
+
+[[gateway]]
+name="gfx-bridge"
+enable=true
+
+[[gateway.inout]]
+account="irc.myirc"
+channel="#gbdev-gfx"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="graphics"
+
+[[gateway]]
+name="emudev-bridge"
+enable=true
+
+[[gateway.inout]]
+account="irc.myirc"
+channel="#gbdev-emudev"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="emudev"
+
+[[gateway]]
+name="research-bridge"
+enable=true
+
+[[gateway.inout]]
+account="irc.myirc"
+channel="#gbdev-research"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="research"
+
+[[gateway]]
+name="hw-bridge"
+enable=true
+
+[[gateway.inout]]
+account="irc.myirc"
+channel="#gbdev-hw"
+
+[[gateway.inout]]
+account="discord.mydiscord"
+channel="hardware"
