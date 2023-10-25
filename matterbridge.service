@@ -1,14 +1,15 @@
 [Unit]
-Description=Discord IRC bridge
+Description=Mattermost IRC bridge
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/avivace/matterbridge/matterbridge
+ExecStart=/home/avivace/matterbridge_gb/matterbridge-1.26.0-linux-64bit
 Restart=always
 RestartSec=30
-WorkingDirectory=/home/avivace/matterbridge
+WorkingDirectory=/home/avivace/matterbridge_gb
 User=avivace
+RuntimeMaxSec=1d
 
 [Install]
 WantedBy=multi-user.target
