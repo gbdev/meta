@@ -4,7 +4,7 @@ These base guidelines (if not specified otherwise) apply to every repository und
 
 ## General
 
-- In case you are unsure, you can reach out the maintainers on [Discord, IRC or Matrix](https://gbdev.io/chat.html)
+- In case you are unsure, you can reach out the maintainers on [Discord or IRC](https://gbdev.io/chat.html)
 
 ## Issues
 
