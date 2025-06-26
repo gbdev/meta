@@ -29,7 +29,6 @@ Teams:
 ### Honorary members
 
 There's a special *Guru* role on Discord, marked with the blue color. This serves to immediatly recognise honorable members of the community, having made a notorious and distinctive contribution.
-If you'd like to be nominated or would like to nominate someone, please get in touch privately, describing what you think is meaningful.
 
 Here is the list (in no particular order) of people which have been granted the Guru status (followed by the nomination):
 
