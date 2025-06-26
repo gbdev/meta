@@ -1,38 +1,35 @@
 # Welcome to the gbdev community!
 
--   Invite link: https://discord.com/invite/RjJKA8wrD4
--   Website: https://gbdev.io
--   GitHub org: https://github.com/gbdev/
--   Support us by donating on [Open Collective](https://opencollective.com/gbdev) or [becoming our sponsors](https://github.com/sponsors/gbdev) on GitHub
--   [Guidelines](https://gbdev.io/contributing.html) for opening issues and sending Pull Requests to our projects
-
+- Invite link: https://discord.com/invite/RjJKA8wrD4
+- Website: https://gbdev.io
+- GitHub org: https://github.com/gbdev/
 ### Follow us
 
--   Mastodon: https://fedi.gbdev.io/@gbdev
--   Twitter: https://twitter.com/gbdev0
--   Instagram: https://www.instagram.com/gbdev0/
-
+- Mastodon: https://mastodon.social/@gbdev
+- Twitter: https://twitter.com/gbdev0
+- Instagram: https://www.instagram.com/gbdev0/
 ### Rules
 
--   Don't ask to ask, just ask. Read https://dontasktoask.com/
--   Avoid unnecessary pleasantries and try to be focused on the question/problem you are asking. Read https://nohello.club/. We have #off-topic and #casual for more relaxed chit chatting.
--   Keep the discussions roughly related to the topic of the channel
--   Be educated with everyone and don't insult, flame or whine. Avoid begging.
--   Talk with a mod before posting invite links
--   Before asking a question, check #faq
--   If possible, post a snippet of your code when describing your problem (use https://gist.github.com/ or https://pastebin.com/ for long code or multiple files)
--   Talking about leaks is allowed, but don't ask or post links or upload content
--   Avoid mass-mentioning moderators unless necessary (e.g. spam)
+- Don't ask to ask, just ask. Read https://dontasktoask.com/
+- Avoid unnecessary pleasantries and try to be focused on the question/problem you are asking https://nohello.club/. We have #off-topic and #casual for more relaxed chit chatting.
+- Keep the discussions roughly related to the topic of the channel
+- Be educated with everyone and don't insult, flame or whine. Avoid begging.
+- Talk with a mod before posting invite links
+- Before asking a question, check #faq 
+- If possible, post a snippet of your code when describing your problem (use https://gist.github.com/ or https://pastebin.com/ for long code or multiple files)
+- Talking about leaks is allowed, but don't ask or post links or upload content
+- Avoid mass-mentioning moderators unless necessary (e.g. spam)
 
-To contact the mod team, message @ModMail#5367
-
+To contact the mod team, message @ModMail#5367 
 ### Resources
-
--   GB/GBC resources: https://github.com/gbdev/awesome-gbdev
--   Pan Docs (GB technical documentation): https://gbdev.io/pandocs/
--   Game Boy Programming Tutorial: https://gbdev.io/gb-asm-tutorial/
+- GB/GBC resources: https://github.com/gbdev/awesome-gbdev
+- Pan Docs (GB technical documentation): https://gbdev.io/pandocs/
+- Game Boy Programming Tutorial: https://gbdev.io/gb-asm-tutorial/
 
 If you're looking for a **GBA** community, check https://gbadev.net and their discord server over https://discord.gg/ctGSNxRkg2
+
+
+---
 
 # Channels
 
@@ -43,11 +40,13 @@ If you're looking for a **GBA** community, check https://gbadev.net and their di
 #feedback — We sometimes request opinions or help here!
 
 ## Showcase
-These channels are for you to share your creations! **Things you post here may be reshared on [our Twitter account](//twitter.com/gbdev0) and other socials**, crediting and @mentioning authors; **you can opt-out** by self-reacting :x: on the message.
+These channels are for you to share your creations! **Things you post here may be reshared on [our Twitter account](https://twitter.com/gbdev0) and other socials**, crediting and @mentioning authors; **you can opt-out** by self-reacting :x: on the message.
 #releases — Only playable games or the like should go here; prototypes and demos should go in #wip-showcase
 #releases-tools — Like the above, but for tooling instead (image editors, music trackers, etc.)
 #wip-showcase — Feel free to show anything you're working on here! Screenshots, gifs, progress reports, blog posts—anything!
 #showcase-chat — **Please keep discussion to this channel!** This ensures that the above three contain only things being showcased.
+
+---
 
 ## Homebrew development
 Your one-stop shop for making fresh new games for the old 'Boy.
@@ -75,11 +74,13 @@ This is where you can relax from all of the Gmae Boying, and nerd out in peace :
 #linguistics — Yes, this topic came up often enough that it has its own dedicated channel. *I'm as confused as you are.*
 #casual — Post anything here (no NSFW...); memes, shitpost...
 
+---
+
 ## Projects
 Here is where we work on projects under the GBDev umbrella. (*If you would like to help us, feel free to say something in any of those channels! :pray:*)
-#rgbds-dev — The home for development of [RGBDS](//rgbds.gbdev.io) itself. If you have feedback on RGBDS, post it here; but **if you need help using RGBDS, please ask in #asm-rgbds**!
+#rgbds-dev — The home for development of [RGBDS](https://rgbds.gbdev.io) itself. If you have feedback on RGBDS, post it here; but **if you need help using RGBDS, please ask in #asm-rgbds**!
 #pandocs — Where the #1 Game Boy technical reference gets worked on.
-#asm-tutorial — Discussions on [the Game Boy assembly tutorial](//gbdev.io/gb-asm-tutorial) happen here.
-#homebrew-hub — Anything related to the [Homebrew Hub](//hh.gbdev.io) should go here.
+#asm-tutorial — Discussions on [the Game Boy assembly tutorial](https://gbdev.io/gb-asm-tutorial) happen here.
+#homebrew-hub — Anything related to the [Homebrew Hub](https://hh.gbdev.io) should go here.
 #archive — We try salvaging websites, articles, contributions, text, and docs about the scene.
-#rgbds-live — [The online playground for RGBDS](//gbdev.io/rgbds-live) is being developed here.
+#rgbds-live — [The online playground for RGBDS](https://gbdev.io/rgbds-live) is being developed here.
